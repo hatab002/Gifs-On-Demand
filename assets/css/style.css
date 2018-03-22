@@ -2,10 +2,10 @@ body{
     font-family: 'Nuecha', cursive;
     background-color: gray;
     color: white !important;
+    margin: 30px;
 }
 .jumbotron{
     border-radius: 5px;
-    margin: 30px;
     margin-bottom: 10px;
     background: linear-gradient(purple, rgb(0, 225, 255));
 }
@@ -22,14 +22,6 @@ h4{
     font-weight: bold;
     color: white !important;
 }
-#gifPanel{
-    margin-left: 30px;
-    
-}
-#buttonPanel{
-    margin-right: 30px;
-}
-
 .panel-body{
     height: 500px;
     overflow: auto;
