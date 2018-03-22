@@ -1,0 +1,58 @@
+body{
+    font-family: 'Nuecha', cursive;
+    background-color: gray;
+    color: white !important;
+}
+.jumbotron{
+    border-radius: 5px;
+    margin: 30px;
+    margin-bottom: 10px;
+    background: linear-gradient(purple, rgb(0, 225, 255));
+}
+.panel{
+    border-radius: 5px;
+}
+.panel-heading{
+    text-align: center;
+    padding: 5px;
+    background: linear-gradient(purple, rgb(0, 225, 255));
+}
+h4{
+    font-size: 25px;
+    font-weight: bold;
+    color: white !important;
+}
+#gifPanel{
+    margin-left: 30px;
+    
+}
+#buttonPanel{
+    margin-right: 30px;
+}
+
+.panel-body{
+    height: 500px;
+    overflow: auto;
+    background: linear-gradient(rgb(0, 102, 128), rgb(255, 187, 0));
+}
+
+.gifButton {
+    margin: 5px;
+    border-radius: 5px;
+    background: rgb(5, 87, 180);
+    color: white !important;
+}
+.gifButton:hover {
+    background-color: rgb(103, 4, 143);
+}
+#newDiv{
+    display: inline-block;
+    border: groove;
+    border-width: 1px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+#gifsDiv{
+    text-align: center;
+}
