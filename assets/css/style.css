@@ -33,7 +33,7 @@ h4{
 .panel-body{
     height: 500px;
     overflow: auto;
-    background: linear-gradient(rgb(0, 102, 128), rgb(255, 187, 0));
+    background: linear-gradient(rgb(0, 102, 128), rgb(134, 38, 91));
 }
 
 .gifButton {
