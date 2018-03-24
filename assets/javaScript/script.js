@@ -14,10 +14,7 @@ $('#goButton').on("click", function(event){
     }
     createButtons();
     $('#topicHere').val("");
-
 })
-
-
 function createButtons(){
     for (i = 0; i < topics.length; i++){
         var btn = $('<button>');
@@ -31,7 +28,6 @@ function createButtons(){
         }
     }
 }
-
 $(document).on("click", ".gifButton", function(){
     var gifTopic = $(this).attr('data-name');
     var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + gifTopic + "&limit=10&api_key=dBPu8CQRih7tcTC6dmXrTx8FR7RO29pl";
@@ -59,7 +55,6 @@ $(document).on("click", ".gifButton", function(){
         }
     })
 })
-
 $(document).on("click", ".gifs", function(){
     if ($(this).attr("state") === "animate"){
         $(this).attr("src", $(this).attr("data-still"));

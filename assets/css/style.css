@@ -3,6 +3,7 @@ body{
     background-color: gray;
     color: white !important;
     margin: 30px;
+    background-image: url(http://wallpaper-gallery.net/images/gif-wallpapers/gif-wallpapers-4.jpg)
 }
 .jumbotron{
     border-radius: 5px;
@@ -25,7 +26,7 @@ h4{
 .panel-body{
     /* height: 500px; */
     overflow: auto;
-    background: linear-gradient(rgb(0, 102, 128), rgb(134, 38, 91));
+    background: linear-gradient(rgb(109, 194, 206), rgb(197, 104, 197), white);
 }
 
 .gifButton {
@@ -56,5 +57,9 @@ h4{
 #gifsHere{
     height: 400px;
 }
-
+#mainDiv{
+    border-top: dashed;
+    border-width: 1px;
+    border-color: white;
+}
 
