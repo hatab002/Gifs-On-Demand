@@ -36,7 +36,7 @@ h4{
     color: white !important;
 }
 .gifButton:hover {
-    background-color: rgb(103, 4, 143);
+    background: linear-gradient(rgb(103, 4, 143), rgb(236, 203, 13));
 }
 #newDiv{
     display: inline-block;
