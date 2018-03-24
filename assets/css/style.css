@@ -3,12 +3,12 @@ body{
     background-color: gray;
     color: white !important;
     margin: 30px;
-    background-image: url(http://wallpaper-gallery.net/images/gif-wallpapers/gif-wallpapers-4.jpg)
+    background-image: url(https://media1.tenor.com/images/76fa74de3213b6eea37d4bbfe00bac6b/tenor.gif?itemid=3476042)
 }
 .jumbotron{
     border-radius: 5px;
     margin-bottom: 20px;
-    background: linear-gradient(purple, rgb(0, 225, 255));
+    background: linear-gradient(rgb(141, 85, 141), rgb(55, 108, 116));
 }
 .panel{
     border-radius: 5px;
@@ -16,7 +16,7 @@ body{
 .panel-heading{
     text-align: center;
     padding: 5px;
-    background: linear-gradient(purple, rgb(0, 225, 255));
+    background: linear-gradient(rgb(141, 85, 141), rgb(55, 108, 116));
 }
 h4{
     font-size: 25px;
@@ -26,17 +26,17 @@ h4{
 .panel-body{
     /* height: 500px; */
     overflow: auto;
-    background: linear-gradient(rgb(109, 194, 206), rgb(197, 104, 197), white);
+    background: linear-gradient(gray, rgb(141, 85, 141));
 }
 
 .gifButton {
     margin: 5px;
     border-radius: 5px;
-    background: rgb(5, 87, 180);
+    background: rgb(38, 73, 114);
     color: white !important;
 }
 .gifButton:hover {
-    background: linear-gradient(rgb(103, 4, 143), rgb(236, 203, 13));
+    background: linear-gradient(rgb(129, 63, 155), rgb(197, 173, 40));
 }
 #newDiv{
     display: inline-block;
