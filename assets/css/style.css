@@ -6,7 +6,7 @@ body{
 }
 .jumbotron{
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background: linear-gradient(purple, rgb(0, 225, 255));
 }
 .panel{
@@ -23,7 +23,7 @@ h4{
     color: white !important;
 }
 .panel-body{
-    height: 500px;
+    /* height: 500px; */
     overflow: auto;
     background: linear-gradient(rgb(0, 102, 128), rgb(134, 38, 91));
 }
@@ -44,7 +44,17 @@ h4{
     margin: 5px;
     padding: 5px;
     text-align: center;
+    background: linear-gradient(rgb(134, 38, 91), grey);
 }
-#gifsDiv{
+#gifsDiv {
     text-align: center;
+    margin-top: 0px;
 }
+#buttonsHere{
+    height: 100px;
+}
+#gifsHere{
+    height: 400px;
+}
+
+

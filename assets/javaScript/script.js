@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var topics = ["tarzan", "jungle book", "lion king"];
+var topics = ["toy story", "jungle book", "lion king"];
 
 createButtons();
 
@@ -45,7 +45,7 @@ $(document).on("click", ".gifButton", function(){
         for (j = 0; j < gifInfo.length; j++){
             let gifRating = gifInfo[j].rating;
             let gifTitle = gifInfo[j].title;
-            let p = $("<p> <h4>Title: </h4>" + gifTitle + "<br> <h4>Rating: </h4>" + gifRating + "</p>") 
+            let p = $("<p> <h4>Title: </h4>" + gifTitle.toUpperCase() + "<br> <h4>Rating: </h4>" + gifRating.toUpperCase() + "</p>") 
             let img = $("<img>");
             img.addClass("gifs");
             img.attr("state", "animate");
