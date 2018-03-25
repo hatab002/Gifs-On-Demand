@@ -3,7 +3,6 @@ $(document).ready(function(){
 var topics = ["toy story", "jungle book", "lion king"];
 
 createButtons();
-
 $('#goButton').on("click", function(event){
     event.preventDefault();
     $('#buttonsHere').empty();
@@ -36,7 +35,6 @@ $(document).on("click", ".gifButton", function(){
         method: "GET"
     }) 
     .then(function(response){
-        console.log(response);
         let gifInfo = response.data;
         for (j = 0; j < gifInfo.length; j++){
             let gifRating = gifInfo[j].rating;
@@ -52,9 +50,25 @@ $(document).on("click", ".gifButton", function(){
             newDiv.append(p);
             newDiv.append(img);
             $("#gifsHere").prepend(newDiv);
+            // ------------------
+            $("#newDiv").dblclick(function(){
+            let original = $(this);
+            let clone = $(this).clone();
+            clone.addClass("clones");
+            $('#favsHere').prepend(clone);
+            // ----------------- local storage
+            let cloneArray = [];
+            cloneArray.push($('#favsHere').html);
+            console.log(cloneArray)
+            localStorage.setItem("cloneArray", JSON.stringify(cloneArray));
+            console.log(localStorage);
+            $('#favsHere').prepend(localStorage.getItem(cloneArray))
+
+            })
         }
     })
 })
+;
 $(document).on("click", ".gifs", function(){
     if ($(this).attr("state") === "animate"){
         $(this).attr("src", $(this).attr("data-still"));
@@ -64,4 +78,6 @@ $(document).on("click", ".gifs", function(){
         $(this).attr("state", "animate");
     }
 })
+
+
 })
