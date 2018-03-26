@@ -3,6 +3,7 @@ $(document).ready(function(){
 var topics = ["toy story", "jungle book", "lion king"];
 
 createButtons();
+showFavs();
 $('#goButton').on("click", function(event){
     event.preventDefault();
     $('#buttonsHere').empty();
@@ -27,6 +28,17 @@ function createButtons(){
         }
     }
 }
+function storeFavs() {
+    if (('localStorage' in window) && window['localStorage'] !== null) {
+        let savedFavs = $('#favsHere').html();
+        localStorage.setItem('favs', savedFavs);
+    }
+}
+function showFavs(){
+    if ('favs' in localStorage) {
+        $("#favsHere").html(localStorage.getItem('favs'));
+    }
+};
 $(document).on("click", ".gifButton", function(){
     var gifTopic = $(this).attr('data-name');
     var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + gifTopic + "&limit=10&api_key=dBPu8CQRih7tcTC6dmXrTx8FR7RO29pl";
@@ -54,21 +66,16 @@ $(document).on("click", ".gifButton", function(){
             $("#newDiv").dblclick(function(){
             let original = $(this);
             let clone = $(this).clone();
-            clone.addClass("clones");
-            $('#favsHere').prepend(clone);
+            clone.addClass("clones");            
+            $('#favsHere').prepend(clone);            
             // ----------------- local storage
-            let cloneArray = [];
-            cloneArray.push($('#favsHere').html);
-            console.log(cloneArray)
-            localStorage.setItem("cloneArray", JSON.stringify(cloneArray));
+            localStorage.clear();
+            storeFavs();
             console.log(localStorage);
-            $('#favsHere').prepend(localStorage.getItem(cloneArray))
-
             })
         }
     })
-})
-;
+});
 $(document).on("click", ".gifs", function(){
     if ($(this).attr("state") === "animate"){
         $(this).attr("src", $(this).attr("data-still"));
@@ -78,6 +85,10 @@ $(document).on("click", ".gifs", function(){
         $(this).attr("state", "animate");
     }
 })
-
+$('#clearFavs').on("click", function(event){
+    event.preventDefault();
+    localStorage.clear();
+    $("#favsHere").html("")
+});
 
 })

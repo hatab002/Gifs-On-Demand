@@ -29,13 +29,16 @@ h4{
     background: linear-gradient(gray, rgb(141, 85, 141));
 }
 
-.gifButton {
+.gifButton, #clearFavs{
     margin: 5px;
     border-radius: 5px;
     background: rgb(38, 73, 114);
     color: white !important;
 }
 .gifButton:hover {
+    background: linear-gradient(rgb(129, 63, 155), rgb(197, 173, 40));
+}
+#clearFavs:hover {
     background: linear-gradient(rgb(129, 63, 155), rgb(197, 173, 40));
 }
 #newDiv{
