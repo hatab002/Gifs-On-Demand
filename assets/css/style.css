@@ -24,6 +24,12 @@ h4{
     font-weight: bold;
     color: white !important;
 }
+h5{
+    font-size: 15px;
+    text-align: center;
+    text-decoration: underline;
+    color: white !important;
+}
 .panel-body{
     overflow: auto;
     background: linear-gradient(gray, rgb(141, 85, 141));

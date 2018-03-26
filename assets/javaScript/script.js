@@ -68,7 +68,6 @@ $(document).on("click", ".gifButton", function(){
             let clone = $(this).clone();
             clone.addClass("clones");            
             $('#favsHere').prepend(clone);            
-            // ----------------- local storage
             localStorage.clear();
             storeFavs();
             console.log(localStorage);
